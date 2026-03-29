@@ -1,0 +1,185 @@
+/* TELA INICIAL */
+
+/* Essa parte define a aparência de toda a página, como a margem e a fonte usada. */
+body {
+    margin: 0; /* Isso remove o espaço em volta da página (margem). */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte do texto. */
+}
+
+/* O contêiner centraliza tudo dentro dele e faz com que os elementos fiquem em linha. (Preservando hoje para existirem amanhã.)*/
+.container {
+    width: 80%; /* O contêiner vai ter 80% da largura da tela. */
+    margin-left: 200px; /* Coloca uma margem à esquerda de 200 pixels, afastando o texto da borda. */
+    display: flex; /* A palavra 'flex' faz os itens dentro do contêiner ficarem alinhados em linha. */
+    justify-content: space-between; /* Os itens vão ter espaço entre eles iguais. */
+    align-items: center; /* Os itens vão ficar alinhados no centro verticalmente. */
+}
+
+/* O cabeçalho da página (a parte do topo) tem uma linha na parte de baixo e fundo preto. */
+.header {
+    border-bottom: 4px solid #32b9cd; /* Linha azul clara na parte de baixo. */
+    background-color: black; /* Fundo preto. */
+}
+
+/* Esse é o estilo do título da página. */
+.titulo {
+    color: #32b9cd; /* Cor do título é azul claro. */
+    font-size: 30px; /* O tamanho da fonte é 30 pixels. */
+}
+
+/* Essa parte é para o menu da página (barra de navegação). */
+.navbar {
+    display: flex; /* Faz os itens ficarem em linha. */
+    gap: 20px; /* Coloca um espaço de 20px entre os itens. (tipos um space-between)*/
+}
+
+/* Remove os pontos de lista e define a cor dos itens do menu. */
+.navbar li {
+    list-style: none; /* Remove os pontinhos na frente das palavras. */
+    color: burlywood; /* Cor do texto dos itens do menu. */
+}
+
+/* Define a cor dos links no menu. */
+.navbar a {
+    text-decoration: none; /* Remove o sublinhado dos links. */
+    color: burlywood; /* Cor do texto dos links. */
+}
+
+/* Aqui está o estilo da área do banner, onde tem uma imagem de fundo. */
+.banner {
+    background-image: url("./bg-jelly-fish-para-home.png"); /* Coloca uma imagem de fundo no banner. */
+    height: 737px; /* A altura do banner é de 737 pixels. */
+    background-size: 100%; /* A imagem vai cobrir todo o espaço do banner. */
+    display: flex; /* Faz com que o conteúdo do banner fique em linha. */
+    color: white; /* O texto dentro do banner vai ser branco. */
+}
+
+/* Define o estilo do texto dentro do banner. */
+.banner p {
+    font-size: 40px; /* O tamanho do texto é de 40 pixels. */
+    display: flex; /* Faz o texto se alinhar em linha. */
+    flex-direction: column; /* Organiza o texto em coluna (de cima para baixo). */
+    margin-left: 300px; /* Coloca uma margem à esquerda de 300 pixels, afastando o texto da borda. */
+}
+
+/* Essa área é para as seções de "Social", como missão, visão, etc. */
+.social {
+    padding: 40px; /* Coloca um espaço de 40px ao redor do conteúdo. */
+    text-align: center; /* Centraliza o texto. */
+    background-color: #e5e5e5; /* O fundo fica cinza claro. */
+}
+
+/* Define como as caixas de conteúdo (como missão, visão) vão se organizar. */
+.boxes {
+    display: flex; /* Os itens vão ficar em linha. */
+}
+
+/* Estilo do título dentro das caixas (missão, visão, valores). */
+.box h4 {
+    color: #e6005c; /* Cor do título é rosa. */
+}
+
+/* Define a altura das imagens dentro das caixas. */
+.boxes img {
+    height: 120px; /* As imagens vão ter 120px tamanho. */
+}
+
+/* Estilo do rodapé (parte de baixo da página). */
+.footer {
+    background-color: #32b9cd; /* Cor de fundo do rodapé (azul claro). */
+    color: white; /* Cor do texto dentro do rodapé. */
+    text-align: center; /* Centraliza o texto no rodapé (footer). */
+    height: 150px; /* O rodapé (footer) tem 150px de altura. */
+}
+
+/* Define o estilo do título dentro do rodapé. */
+.footer h4 {
+    margin-left: 500px; /* Coloca uma margem à esquerda de 500px no título. */
+}
+
+/* TELA LOGIN */
+
+/* Estilo da tela de login. */
+.login {
+    background-image: url("./bg-jelly-fish-para-home.png"); /* Coloca uma imagem de fundo na tela de login. */
+    background-size: cover; /* A imagem cobre toda a tela. */
+    height: 737px; /* A altura da tela de login é 737px. */
+    display: flex; /* Flexbox para organizar os itens da tela de login. */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente. */
+    align-items: center; /* Centraliza o conteúdo verticalmente. */
+}
+
+/* Estilo do cartão de login (onde estão os campos de login). */
+.card-login {
+    background-color: #d9d9d9; /* Cor de fundo do cartão é cinza claro. */
+    padding: 30px; /* Coloca 30px de espaço dentro do cartão. */
+    border-radius: 12px; /* Arredonda os cantos do cartão. */
+    width: 450px; /* Largura do cartão é 450px. */
+    text-align: center; /* Centraliza o texto dentro do cartão. */
+}
+
+/* Organiza os campos de entrada (como usuário e senha) dentro do cartão. */
+.campo {
+    display: flex; /* Flexbox para organizar os campos. */
+    flex-direction: column; /* Organiza os campos em coluna. */
+    margin-bottom: 20px; /* Espaço de 20px abaixo de cada campo. */
+    text-align: left; /* Alinha o texto à esquerda dentro dos campos. */
+}
+
+/* Estilo para os campos de entrada, como o campo de senha. */
+.campo input {
+    padding: 10px; /* Coloca 10px de espaço dentro dos campos. */
+    border-radius: 8px; /* Arredonda os cantos dos campos. */
+    border: 2px solid #32b9cd; /* Define uma borda azul clara ao redor dos campos. */
+}
+
+/* Estilo do título dentro do cartão de login. */
+.card-login h2 {
+    color: #ff5c8a; /* Cor do título é um rosa claro. */
+}
+
+/* Estilo para o botão de login. */
+.botao {
+    background-color: #ff2f6d; /* Cor de fundo do botão é rosa. */
+    color: white; /* Cor do texto do botão é branco. */
+    padding: 10px; /* Coloca 10px de espaço dentro do botão. */
+    border: none; /* Remove a borda padrão do botão. */
+    border-radius: 5px; /* Arredonda os cantos do botão. */
+    font-weight: bold; /* Deixa o texto que está dentro do botão em negrito */
+}
+
+/* Deixa o texto em negrito nos campos com a tag <span>. */
+.campo span {
+    font-weight: bold; /* Aplica o negrito ao texto dentro do <span>. */
+}
+
+/* TELA CADASTRO */
+
+/* Estilo do cartão de cadastro, que é muito parecido com o de login. */
+.card-cadastro {
+    background-color: #d9d9d9; /* Cor de fundo do cartão de cadastro. */
+    padding: 30px; /* Coloca 30px de espaço dentro do cartão. */
+    border-radius: 12px; /* Arredonda os cantos do cartão. */
+    width: 450px; /* Largura do cartão é 450px. */
+    text-align: center; /* Centraliza o texto dentro do cartão. */
+}
+
+/* Estilo do título dentro do cartão de cadastro. */
+.card-cadastro h2 {
+    color: #ff5c8a; /* Cor do título no cartão de cadastro. */
+}
+
+/* Estilo do formulário dentro do cartão de cadastro. */
+.formulario {
+    color: #ff5c8a; /* Cor do texto dentro do formulário. */
+}
+
+/* Estilo dos campos de entrada dentro do formulário de cadastro. */
+input {
+    text-align: center; /* Centraliza o texto dentro dos campos de entrada. */
+}
+
+/* Aplica negrito ao texto dentro dos campos de cadastro. */
+.campo span {
+    font-weight: bold; /* Deixa o texto em negrito. */
+}
